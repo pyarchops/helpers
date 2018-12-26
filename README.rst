@@ -18,7 +18,7 @@ pyArchOps/helpers
           :alt: Updates
 
 
-helpers
+Helpers for pyArchOps
 
 
 * Free software: MIT license
@@ -28,7 +28,7 @@ helpers
 Features
 --------
 
-* helpers
+* docker based test helpers
 
 Usage
 --------
