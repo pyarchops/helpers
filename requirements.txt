@@ -4,7 +4,7 @@ coverage==4.5.2
 fabric3 < 2.0
 flake8==3.6.0
 jedi
-ipython
+ipython==7.2.0
 mypy
 netifaces
 paramiko==2.4.2
