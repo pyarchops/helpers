@@ -3,9 +3,6 @@
 
 """Helpers for `pyarchops tests` packages."""
 
-# TODO: all this functions should be oved to a
-# pyarchops.helpers package on pypi
-# TODO: then do a release for this
 
 import os
 import re
