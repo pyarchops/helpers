@@ -30,6 +30,15 @@ Features
 
 * docker based test helpers
 
+
+Instalation
+--------------
+
+.. code-block:: console
+
+    $ pip install pyarchops-helpers
+
+
 Usage
 --------
 
