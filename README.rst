@@ -9,8 +9,8 @@ pyArchOps/helpers
 .. image:: https://img.shields.io/gitlab/pipeline/gitlab-org/gitlab-ce/master.svg
         :target: https://gitlab.com/pyarchops/helpers/pipelines
 
-.. image:: https://readthedocs.org/projects/helpers/badge/?version=latest
-        :target: https://helpers.readthedocs.io/en/latest/?badge=latest
+.. image:: https://readthedocs.org/projects/pyarchops-helpers/badge/?version=latest
+        :target: https://pyarchops-helpers.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
 .. image:: https://pyup.io/repos/github/pyarchops/helpers/shield.svg
