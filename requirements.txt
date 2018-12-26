@@ -14,7 +14,7 @@ pytest-runner==4.2
 pytest-cov
 python-build
 rope
-ropevim
+ropevim==0.7.0
 Sphinx==1.8.1
 tmuxp
 twine==1.12.1
