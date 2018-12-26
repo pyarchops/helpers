@@ -15,7 +15,7 @@ pytest-cov
 python-build
 rope
 ropevim
-Sphinx==1.8.1
+Sphinx==1.8.3
 tmuxp
 twine==1.12.1
 watchdog==0.9.0
