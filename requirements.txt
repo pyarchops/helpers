@@ -9,7 +9,7 @@ mypy
 netifaces
 paramiko
 pylint
-pytest==3.8.2
+pytest==4.0.2
 pytest-runner==4.2
 pytest-cov
 python-build
