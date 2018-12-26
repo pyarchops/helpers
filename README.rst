@@ -6,7 +6,7 @@ pyArchOps/helpers
 .. image:: https://badge.fury.io/py/pyarchops-helpers.svg
         :target: https://pypi.python.org/pypi/pyarchops-helpers
 
-.. image:: https://img.shields.io/gitlab/pipeline/gitlab-org/gitlab-ce/master.svg
+.. image:: https://img.shields.io/gitlab/pipeline/pyarchops/helpers/next-release.svg
         :target: https://gitlab.com/pyarchops/helpers/pipelines
 
 .. image:: https://readthedocs.org/projects/pyarchops-helpers/badge/?version=latest
