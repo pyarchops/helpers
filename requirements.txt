@@ -12,7 +12,7 @@ pylint
 pytest==3.8.2
 pytest-runner==4.2
 pytest-cov
-python-build
+python-build==0.2.13
 rope
 ropevim
 Sphinx==1.8.1
