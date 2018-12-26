@@ -3,7 +3,7 @@ bumpversion==0.5.3
 coverage==4.5.1
 fabric3 < 2.0
 flake8==3.5.0
-jedi
+jedi==0.13.2
 ipython
 mypy
 netifaces
