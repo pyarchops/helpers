@@ -7,7 +7,7 @@ jedi
 ipython
 mypy
 netifaces
-paramiko
+paramiko==2.4.2
 pylint
 pytest==4.0.2
 pytest-runner==4.2
