@@ -2,7 +2,7 @@ bpython==0.17.1
 bumpversion==0.5.3
 coverage==4.5.2
 fabric3 < 2.0
-flake8==3.5.0
+flake8==3.6.0
 jedi
 ipython
 mypy
