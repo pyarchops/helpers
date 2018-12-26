@@ -5,7 +5,7 @@ fabric3 < 2.0
 flake8==3.5.0
 jedi
 ipython
-mypy
+mypy==0.650
 netifaces
 paramiko
 pylint
