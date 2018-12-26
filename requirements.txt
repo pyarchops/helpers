@@ -12,8 +12,8 @@ pylint
 pytest==4.0.2
 pytest-runner==4.2
 pytest-cov
-python-build==0.2.13
-rope
+python-build=0.2.13
+rope==0.11.0
 ropevim==0.7.0
 Sphinx==1.8.1
 tmuxp==1.4.2
