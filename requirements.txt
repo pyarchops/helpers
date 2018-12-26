@@ -16,7 +16,7 @@ python-build
 rope
 ropevim
 Sphinx==1.8.1
-tmuxp
+tmuxp==1.4.2
 twine==1.12.1
 watchdog==0.9.0
 wheel==0.32.1
