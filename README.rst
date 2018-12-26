@@ -35,21 +35,32 @@ Usage
 
 .. code-block:: python
 
-    import os
-    import pyarchops_helpers
+    from suitable import Api
+    from pyarchops_helpers import helpers
 
-    api = Api(
-        '127.0.0.1:22',
-        connection='smart',
-        remote_user='ubuntu',
-        private_key_file=os.getenv('HOME') + '/.ssh/id_rsa',
-        become=True,
-        become_user='root',
-        sudo=True,
-        ssh_extra_args='-o StrictHostKeyChecking=no'
-    )
-    result = pyarchops_helpers.apply(api)
-    print(result)
+    with helpers.ephemeral_docker_container(
+            image='azulinho/pyarchops-base'
+    ) as container:
+        connection_string = "{}:{}".format(
+            container['ip'], container['port']
+        )
+        print('connection strings is ' + connection_string)
+        api = Api(connection_string,
+                  connection='smart',
+                  remote_user=container['user'],
+                  private_key_file=container['pkey'],
+                  become=True,
+                  become_user='root',
+                  sudo=True,
+                  ssh_extra_args='-o StrictHostKeyChecking=no')
+
+        try:
+            result = api.setup()['contacted'][connection_string]
+        except Exception as error:
+            raise error
+
+        assert result['ansible_facts']
+
 
 Development
 -----------
