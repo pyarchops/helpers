@@ -3,8 +3,8 @@ pyArchOps/helpers
 =====================
 
 
-.. image:: https://img.shields.io/pypi/v/pyarchops_helpers.svg
-        :target: https://pypi.python.org/pypi/pyarchops_helpers
+.. image:: https://badge.fury.io/py/pyarchops-helpers.svg
+        :target: https://pypi.python.org/pypi/pyarchops-helpers
 
 .. image:: https://img.shields.io/gitlab/pipeline/gitlab-org/gitlab-ce/master.svg
         :target: https://gitlab.com/pyarchops/helpers/pipelines
