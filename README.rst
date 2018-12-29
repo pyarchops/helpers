@@ -48,7 +48,7 @@ Usage
     from pyarchops_helpers import helpers
 
     with helpers.ephemeral_docker_container(
-            image='azulinho/pyarchops-base'
+            image='registry.gitlab.com/pyarchops/pyarchops-base'
     ) as container:
         connection_string = "{}:{}".format(
             container['ip'], container['port']
