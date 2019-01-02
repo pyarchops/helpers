@@ -6,7 +6,7 @@ flake8==3.6.0
 jedi==0.13.2
 ipython==7.2.0
 mypy==0.650
-netifaces==0.10.7
+netifaces==0.10.9
 paramiko==2.4.2
 pylint==2.2.2
 pytest==4.0.2
