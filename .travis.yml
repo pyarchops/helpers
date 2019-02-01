@@ -1,6 +1,7 @@
 language: python
 sudo: true
 python: 3.7
+dist: xenial
 
 stages:
     - setup
@@ -19,3 +20,10 @@ jobs:
 
     - stage: tests
       script: source .venv/bin/activate && make pytest
+
+
+cache:
+  directories:
+    - $HOME/.cache/pip
+    - .tox
+    - .venv
