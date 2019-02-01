@@ -3,43 +3,11 @@ sudo: true
 python: 3.7
 dist: xenial
 cache: pip
+services:
+  - docker
 
-stages:
-    - setup
-    - tests
-
-jobs:
-  include:
-    - stage: setup
-      script:
-        - pip install -r requirements.txt
-        - pip install -r requirements_dev.txt
-        - pip install -e .
-
-    - stage: tests
-      script:
-        - pip install -r requirements.txt
-        - pip install -r requirements_dev.txt
-        - pip install -e .
-        - LC_ALL=C BROWSER=echo make docs
-
-    - stage: tests
-      script:
-        - pip install -r requirements.txt
-        - pip install -r requirements_dev.txt
-        - pip install -e .
-        - make mypy lint
-
-    - stage: tests
-      script:
-        - pip install -r requirements.txt
-        - pip install -r requirements_dev.txt
-        - pip install -e .
-        - make pytest
-
-
-cache:
-  directories:
-    - $HOME/.cache/pip
-    - .tox
-    - .venv
+script:
+  - pip install -r requirements.txt
+  - pip install -r requirements_dev.txt
+  - pip install -e .
+  - LC_ALL=C BROWSER=echo make docs mypy lint pytest
