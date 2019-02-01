@@ -1,0 +1,22 @@
+language: python
+sudo: true
+python:
+    - 3.7
+
+stages:
+    - setup
+    - tests
+
+jobs:
+  include:
+    - stage: setup
+      script: bash .bootstrap.sh
+
+    - stage: tests
+      script: source .venv/bin/activate && LC_ALL=C BROWSER=echo make docs
+
+    - stage: tests
+      script: source .venv/bin/activate && make mypy lint
+
+    - stage: tests
+      script: source .venv/bin/activate && make pytest
