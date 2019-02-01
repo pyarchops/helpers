@@ -3,6 +3,9 @@ sudo: true
 python: 3.7
 dist: xenial
 
+virtualenv:
+  system_site_packages: true
+
 stages:
     - setup
     - tests
