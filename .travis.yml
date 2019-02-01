@@ -1,7 +1,8 @@
-language: generic
+language: python
 sudo: true
 python: 3.7
 dist: xenial
+cache: pip
 
 stages:
     - setup
@@ -10,16 +11,31 @@ stages:
 jobs:
   include:
     - stage: setup
-      script: bash .bootstrap.sh
+      script:
+        - pip install -r requirements.txt
+        - pip install -r requirements_dev.txt
+        - pip install -e .
 
     - stage: tests
-      script: source .venv/bin/activate && LC_ALL=C BROWSER=echo make docs
+      script:
+        - pip install -r requirements.txt
+        - pip install -r requirements_dev.txt
+        - pip install -e .
+        - LC_ALL=C BROWSER=echo make docs
 
     - stage: tests
-      script: source .venv/bin/activate && make mypy lint
+      script:
+        - pip install -r requirements.txt
+        - pip install -r requirements_dev.txt
+        - pip install -e .
+        - make mypy lint
 
     - stage: tests
-      script: source .venv/bin/activate && make pytest
+      script:
+        - pip install -r requirements.txt
+        - pip install -r requirements_dev.txt
+        - pip install -e .
+        - make pytest
 
 
 cache:
